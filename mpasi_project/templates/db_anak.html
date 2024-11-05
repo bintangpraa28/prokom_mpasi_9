@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Anak</title>
+</head>
+<body>
+    <h1>Daftar Anak</h1>
+    <ul>
+        {% for anak in anak_list %}
+            <li>{{ anak.nama }} - {{ anak.umur }} bulan - {{ anak.berat_badan }} kg</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Kembali</a>
+</body>
+</html>
